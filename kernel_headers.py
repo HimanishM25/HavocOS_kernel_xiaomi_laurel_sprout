@@ -283,7 +283,7 @@ def gen_arch_headers(
       if verbose:
         print('gen_arch_headers: cmd is %s' % cmd)
 
-      result = subprocess.call(['sh', gen_headers, h, out_h])
+      result = subprocess.call(cmd)
 
       if result != 0:
         print('error: gen_arch_headers: cmd %s failed %d' % (cmd, result))
